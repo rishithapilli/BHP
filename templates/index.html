@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BHP</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>BHP</h1>
+    <form action="/predict" method="post">
+      <label for="CRIM">CRIM:</label>
+      <input type="text" id="CRIM" name="CRIM" required><br>
+
+      <label for="ZN">ZN:</label>
+      <input type="text" id="ZN" name="ZN" required><br>
+
+      <label for="INDUS">INDUS:</label>
+      <input type="text" id="INDUS" name="INDUS" required><br>
+
+      <label for="CHAS">CHAS:</label>
+      <input type="text" id="CHAS" name="CHAS" required><br>
+
+      <label for="NOX">NOX:</label>
+      <input type="text" id="NOX" name="NOX" required><br>
+
+      <label for="RM">RM:</label>
+      <input type="text" id="RM" name="RM" required><br>
+
+      <label for="Age">Age:</label>
+      <input type="text" id="Age" name="Age" required><br>
+
+      <label for="DIS">DIS:</label>
+      <input type="text" id="DIS" name="DIS" required><br>
+
+      <label for="RAD">RAD:</label>
+      <input type="text" id="RAD" name="RAD" required><br>
+
+      <label for="TAX">TAX:</label>
+      <input type="text" id="TAX" name="TAX" required><br>
+
+      <label for="PTRATIO">PTRATIO:</label>
+      <input type="text" id="PTRATIO" name="PTRATIO" required><br>
+
+      <label for="B">B:</label>
+      <input type="text" id="B" name="B" required><br>
+
+      <label for="LSTAT">LSTAT:</label>
+      <input type="text" id="LSTAT" name="LSTAT" required><br>
+
+      <input type="submit" value="Predict">
+    </form>
+  </div>
+</body>
+</html>
